@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>AI RAG Document Assistant</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>AI-Powered RAG Document Assistant</h1>
+
+        <p class="subtitle">
+            Upload a PDF or TXT document and ask questions about it.
+        </p>
+
+
+        <!-- Upload Section -->
+
+        <div class="card">
+
+            <h2>1. Upload Document</h2>
+
+            <input
+                type="file"
+                id="fileInput"
+                accept=".pdf,.txt"
+            >
+
+            <button onclick="uploadFile()">
+                Upload Document
+            </button>
+
+            <p id="uploadStatus"></p>
+
+        </div>
+
+
+        <!-- Question Section -->
+
+        <div class="card">
+
+            <h2>2. Ask a Question</h2>
+
+            <textarea
+                id="question"
+                placeholder="Ask something about your document..."
+            ></textarea>
+
+            <button onclick="askQuestion()">
+                Ask Question
+            </button>
+
+        </div>
+
+
+        <!-- Answer Section -->
+
+        <div class="card">
+
+            <h2>3. Answer</h2>
+
+            <div id="answer">
+                Your answer will appear here.
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

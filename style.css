@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background:
+        radial-gradient(circle at 20% 20%, rgba(255, 0, 255, 0.15), transparent 30%),
+        radial-gradient(circle at 80% 80%, rgba(0, 255, 255, 0.15), transparent 30%),
+        linear-gradient(135deg, #080014, #00111f 50%, #100018);
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+/* Main heading */
+h1 {
+    text-align: center;
+    color: #00ffff;
+    font-size: 38px;
+    text-shadow:
+        0 0 5px #00ffff,
+        0 0 15px #00ffff,
+        0 0 30px #00ffff;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #ff4dff;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px #ff00ff;
+}
+
+/* Neon cards */
+.card {
+    background: rgba(10, 10, 35, 0.85);
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+
+    border: 1px solid #00ffff;
+
+    box-shadow:
+        0 0 5px #00ffff,
+        0 0 15px rgba(0, 255, 255, 0.5),
+        inset 0 0 15px rgba(255, 0, 255, 0.08);
+
+    backdrop-filter: blur(10px);
+}
+
+h2 {
+    margin-top: 0;
+    color: #ff00ff;
+
+    text-shadow:
+        0 0 5px #ff00ff,
+        0 0 15px #ff00ff;
+}
+
+/* File upload */
+input[type="file"] {
+    margin: 15px 0;
+    display: block;
+    color: #00ffff;
+}
+
+/* Textarea */
+textarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 12px;
+
+    font-size: 16px;
+
+    border: 1px solid #00ffff;
+    border-radius: 8px;
+
+    resize: vertical;
+
+    background: rgba(0, 10, 30, 0.9);
+    color: #ffffff;
+
+    box-shadow:
+        0 0 5px rgba(0, 255, 255, 0.5),
+        inset 0 0 10px rgba(0, 255, 255, 0.08);
+}
+
+textarea::placeholder {
+    color: #7ffcff;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #ff00ff;
+
+    box-shadow:
+        0 0 5px #ff00ff,
+        0 0 15px #ff00ff,
+        0 0 30px rgba(255, 0, 255, 0.4);
+}
+
+/* Neon button */
+button {
+    background: linear-gradient(
+        90deg,
+        #ff00cc,
+        #7700ff,
+        #00ffff
+    );
+
+    color: #ffffff;
+    border: none;
+
+    padding: 12px 25px;
+    border-radius: 8px;
+
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    box-shadow:
+        0 0 5px #ff00ff,
+        0 0 15px #00ffff;
+
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px) scale(1.03);
+
+    box-shadow:
+        0 0 10px #ff00ff,
+        0 0 25px #00ffff,
+        0 0 40px #ff00ff;
+}
+
+/* Upload status */
+#uploadStatus {
+    margin-top: 15px;
+    font-weight: bold;
+
+    color: #39ff14;
+
+    text-shadow:
+        0 0 5px #39ff14,
+        0 0 15px #39ff14;
+}
+
+/* Answer box */
+#answer {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 0, 255, 0.12),
+            rgba(0, 255, 255, 0.12)
+        );
+
+    padding: 20px;
+    border-radius: 10px;
+
+    border-left: 4px solid #00ffff;
+
+    min-height: 80px;
+    line-height: 1.6;
+
+    color: #eaffff;
+
+    box-shadow:
+        0 0 10px rgba(0, 255, 255, 0.3),
+        inset 0 0 15px rgba(255, 0, 255, 0.08);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #080014;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+        #ff00ff,
+        #00ffff
+    );
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 0 10px #00ffff;
+}
+
+/* Selection color */
+::selection {
+    background: #ff00ff;
+    color: #ffffff;
+}
+
